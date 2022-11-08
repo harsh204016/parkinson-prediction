@@ -1,4 +1,4 @@
-pandas==1.5.1
+pandas==1.1.5
 matplotlib==3.6.2
 scikit-learn==1.1.2
 imbalanced-learn==0.9.1
