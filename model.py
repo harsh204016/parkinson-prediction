@@ -44,7 +44,7 @@ call_metrics(logistic_model,xtest,ytest)
 ####################
 ## Model Building ##
 ####################
-randomforest_model = RandomForestClassifier(max_depth=5, random_state=seed)
+randomforest_model = RandomForestClassifier(max_depth=6, random_state=seed)
 randomforest_model.fit(xtrain,ytrain)
 
 call_metrics(randomforest_model,xtest,ytest)
