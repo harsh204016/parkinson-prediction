@@ -22,7 +22,8 @@ def call_metrics(model=None,xtest=None,ytest=None):
     plt.savefig(str(model)+"confusion.png")
 
 os_path = os.getcwd()
-data = pd.read_csv(os_path+"\\parkinsons.data")
+print("OS PATH",os_path)
+data = pd.read_csv("parkinsons.data")
 
 ### seperating the X and y values ####
 data.drop(["name"],axis=1,inplace=True)
