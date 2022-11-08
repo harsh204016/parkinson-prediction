@@ -47,7 +47,7 @@ call_metrics(logistic_model,xtest,ytest)
 randomforest_model = RandomForestClassifier(max_depth=5, random_state=seed)
 randomforest_model.fit(xtrain,ytrain)
 
-# call_metrics(randomforest_model,xtest,ytest)
+call_metrics(randomforest_model,xtest,ytest)
 
 
 # transform the dataset
@@ -61,7 +61,7 @@ xtrain,xtest,ytrain,ytest = train_test_split(X,y,shuffle=True,stratify=y,random_
 logistic_model = LogisticRegression()
 logistic_model.fit(xtrain,ytrain)
 
-file.write("After Upsampling\n")
+# file.write("After Upsampling\n")
 # call_metrics(logistic_model,xtest,ytest)
 
 
